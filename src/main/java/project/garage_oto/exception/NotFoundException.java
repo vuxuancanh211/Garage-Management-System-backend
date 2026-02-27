@@ -1,0 +1,7 @@
+package project.garage_oto.exception;
+
+public class NotFoundException extends RuntimeException {
+    public NotFoundException(String message) {
+        super(message);
+    }
+}
