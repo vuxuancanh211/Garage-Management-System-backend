@@ -1,9 +1,6 @@
 package project.garage_oto.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,10 +16,11 @@ public class Employee {
     @Id
     @Column(length = 10)
     private String maNV;
-
     private String hoTen;
-    private String vaiTro;
     private String sdt;
     private String email;
     private String matKhau;
+
+    @Enumerated(EnumType.STRING)
+    private Role role = Role.ROLE_EMPLOYEE;
 }

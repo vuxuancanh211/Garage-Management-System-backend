@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS khach_hang (
 CREATE TABLE IF NOT EXISTS nhan_vien (
     "maNV" VARCHAR(10) PRIMARY KEY,
     "hoTen" VARCHAR(100),
-    "vaiTro" VARCHAR(50),
     "sdt" VARCHAR(10),
     "email" VARCHAR(100),
-    "matKhau" VARCHAR(255)
+    "matKhau" VARCHAR(255),
+    "role" VARCHAR(50) DEFAULT 'ROLE_EMPLOYEE'
     );
